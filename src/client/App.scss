@@ -1,0 +1,82 @@
+@import 'App.colors';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+
+	background: var(--color-background);
+
+	color: var(--color-text);
+	font-family: sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+	font-weight: 200;
+	margin: 2rem 0;
+}
+
+button {
+
+	background: var(--color-background);
+	border: solid 1px;
+	border-radius: 100vh;
+	color: inherit;
+	cursor: pointer;
+
+	transition: all 0.1s;
+
+}
+
+button:hover {
+
+	background: var(--color-text);
+	border-color: transparent;
+	color: var(--color-background);
+}
+
+table {
+	width: 100%;
+
+	th {
+		text-align: left;
+	}
+}
+
+.container {
+	padding: 0 3em;
+}
+
+.waiting,
+.waiting * {
+	cursor: progress !important;
+}
+
+.switch-wrapper {
+	position: relative;
+}
+
+.switch-wrapper > div {
+	position: absolute;
+
+	width: 100%;
+}
+
+.actions {
+	margin: 2rem 0;
+}

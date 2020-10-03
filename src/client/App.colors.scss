@@ -1,0 +1,13 @@
+$color-main: #8a14ff;
+$color-background: darken($color-main, 51%);
+$color-sidebar: lighten($color-background, 2%);
+$color-text: rgba(lighten($color-background, 70%), 0.6);
+$color-btn: lighten($color-background, 10%);
+
+body {
+	--color-main: #{$color-main};
+	--color-background: #{$color-background};
+	--color-sidebar: #{$color-sidebar};
+	--color-text: #{$color-text};
+	--color-btn: #{$color-btn};
+}

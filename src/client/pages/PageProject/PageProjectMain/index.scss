@@ -1,0 +1,33 @@
+.pages {
+	display: grid;
+
+	grid-template-columns: repeat(auto-fill, 210px);
+
+	.page {
+		display: inline-flex;
+		flex-direction: column;
+
+		margin: 10px;
+
+		text-align: center;
+
+		.page-preview {
+			height: 150px;
+			position: relative;
+
+			width: 200px;
+
+			.page-area {
+
+				background: rgba(0, 0, 255, 0.5);
+				position: absolute;
+			}
+			
+			img {
+				height: 100%;
+				width: 100%;
+			}
+		}
+
+	}
+}
